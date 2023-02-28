@@ -1,7 +1,7 @@
 function App() {
 
   return (
-    <h1>elo I am under the water</h1>
+    <h1>*Sigh*</h1>
 )}
 
 export default App

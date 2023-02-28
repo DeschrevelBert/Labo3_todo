@@ -1,0 +1,19 @@
+:root {
+	/* colors */
+	--theme-color: blue;
+
+	--neutral-x-light: hsl(0, 0%, 95%);
+	--neutral-light: hsl(0, 0%, 78%);
+	--neutral: hsl(0, 0%, 58%);
+	--neutral-dark: hsl(0, 0%, 36%);
+	--neutral-x-dark: hsl(0, 0%, 8%);
+
+	--white: #fff;
+
+	/* opacity */
+	--muted-opacity: 0.4;
+
+	/* transitions */
+	--transition-duration: 0.4s;
+	--transition-easing: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
