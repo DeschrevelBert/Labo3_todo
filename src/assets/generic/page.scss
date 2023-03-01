@@ -1,0 +1,29 @@
+html {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: 'Muli', Helvetica, arial, sans-serif;
+	color: var(--neutral-x-dark);
+	background-color: var(--white);
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: cyan;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+/*
+* Remove text-shadow in selection highlight:
+* https://twitter.com/miketaylr/status/12228805301
+*
+* Customize the background color to match your design.
+*/
+
+::selection {
+	background: var(--neutral-dark);
+	color: var(--theme-color);
+	text-shadow: none;
+}
