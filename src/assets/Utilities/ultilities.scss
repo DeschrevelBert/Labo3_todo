@@ -1,0 +1,9 @@
+.u-will-fade {
+	opacity: 1;
+	will-change: opacity;
+	transition: var(--transition-duration) opacity var(--transition-easing);
+}
+
+.u-faded {
+	opacity: var(--muted-opacity);
+}
