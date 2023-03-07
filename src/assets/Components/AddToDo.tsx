@@ -2,7 +2,7 @@ import {Plus} from 'lucide-react'
 import { ITodo } from '../../../Interfaces/ITodo';
 import { ChangeEvent, useState } from 'react';
 import '../../assets/styles/Components/add-todo.scss'
-/*
+
 export default ({handleNewTodo} : {handleNewTodo: Function}) => {
     const [newTodo, setNewTodo] = useState<ITodo>({
         name: '',
@@ -28,19 +28,20 @@ export default ({handleNewTodo} : {handleNewTodo: Function}) => {
 
 
     return (
-        <form className='c-add-todo' onSubmit={addTodo}>
-            <button className='c-add-todo__button'>
-                <Plus className='c-add-todo__icon' />
+        <form className='flex items-center mb-8 gap-4' onSubmit={addTodo}>
+            <button className='w-16 h-16 hover:bg-neutral-100 flex items-center justify-center rounded-full focus:outline-none focus-visible:ring-2'>
+                <Plus className='stroke-current text-neutral-700' />
             </button>
 
-            <div>
+            <div className='spacey-y-2 w-full'>
                 <input value={newTodo.name} 
                 onInput={(e) => setNewTodo({...newTodo, name: e.currentTarget.value})} //3 puntjes (spread operator) haalt de keys uit een object en zet ze in een nieuw object
-                type="text" placeholder='ex. Learn more' className='c-add-todo__input' />
-                <select value={newTodo.category} onChange={(e:ChangeEvent<HTMLSelectElement>) => {
+                type="text" placeholder='ex. Learn more' className='p-2 border border-neutral-200 rounded w-full focus:outline-none focus-visible:ring-2' />
+                <select 
+                value={newTodo.category} onChange={(e:ChangeEvent<HTMLSelectElement>) => {
                     setNewTodo({...newTodo, category: e.currentTarget.value})
                 }} 
-                className='c-add-todo__select' name="category" id="category">
+                className='w-full p-2 border border-neutral-200 rounded focus:outline-none focus-visible:ring-2' name="category" id="category">
                     <option value="Work">Work</option>
                     <option value="Personal">Personal</option>
                 </select>
@@ -48,7 +49,8 @@ export default ({handleNewTodo} : {handleNewTodo: Function}) => {
 
         </form>
     )
-}*/
+}
+/*
 export default () => {
     return (
         <form className='c-add-todo'>
@@ -64,4 +66,4 @@ export default () => {
             </div>
         </form>
     )
-}
+}*/

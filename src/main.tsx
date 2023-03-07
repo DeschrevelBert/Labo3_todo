@@ -6,7 +6,6 @@ import './assets/tailwind.css'
 import  Settings  from './routes/Settings'
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import AppHeader from './assets/Components/AppHeader'
 import AppFooter from './assets/Components/AppFooter'
 import Dashboard from './routes/Dashboard';
 const router = createBrowserRouter([
@@ -23,7 +22,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <div className="o-container">
+    <div className="mx-auto max-w-4xl px-8">
       
       <RouterProvider router={router} />
 

@@ -1,7 +1,7 @@
 const  AppFooter = () =>{
     return (
-        <footer className="c-footer">
-            <p>Crafted avec un 🥐</p>
+        <footer className="text-sm text-neutral-300 text-center p-8">
+            <p>Crafted avec un 🥐 - {new Date().getFullYear()}</p>
         </footer>
     )
 }
