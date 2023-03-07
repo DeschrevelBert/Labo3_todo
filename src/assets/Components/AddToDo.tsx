@@ -1,7 +1,6 @@
 import {Plus} from 'lucide-react'
 import { ITodo } from '../../../Interfaces/ITodo';
 import { ChangeEvent, useState } from 'react';
-import '../../assets/styles/Components/add-todo.scss'
 
 export default ({handleNewTodo} : {handleNewTodo: Function}) => {
     const [newTodo, setNewTodo] = useState<ITodo>({

@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Settings } from "lucide-react";
 
-import '../styles/Components/header.scss'
 
 
 export default () =>{

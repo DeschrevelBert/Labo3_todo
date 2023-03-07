@@ -1,5 +1,4 @@
 //Remember bij afvinken doorgeven aan de parent
-import '../styles/Components/todo-item.scss'
 import { ITodo } from '../../../Interfaces/ITodo'
 import { Check } from 'lucide-react'
 
