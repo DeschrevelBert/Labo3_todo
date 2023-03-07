@@ -2,7 +2,7 @@ import {Plus} from 'lucide-react'
 import { ITodo } from '../../../Interfaces/ITodo';
 import { ChangeEvent, useState } from 'react';
 import '../../assets/styles/Components/add-todo.scss'
-
+/*
 export default ({handleNewTodo} : {handleNewTodo: Function}) => {
     const [newTodo, setNewTodo] = useState<ITodo>({
         name: '',
@@ -46,6 +46,22 @@ export default ({handleNewTodo} : {handleNewTodo: Function}) => {
                 </select>
             </div>
 
+        </form>
+    )
+}*/
+export default () => {
+    return (
+        <form className='c-add-todo'>
+            <button className='c-add-todo__button'>
+                <Plus className='c-add-todo__icon'/>
+            </button>
+            <div>
+                <input type="text" placeholder="Eg. learn vue" className='c-add-todo__input'/>
+                <select name="category" id="category" className='c-add-todo__select'>
+                    <option value="work">Work</option>
+                    <option value="personal">Personal</option>
+                </select>
+            </div>
         </form>
     )
 }
