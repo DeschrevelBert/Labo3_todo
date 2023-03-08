@@ -1,10 +1,7 @@
 import {Plus} from 'lucide-react'
 import { ITodo } from '../../../Interfaces/ITodo';
 import { ChangeEvent, useState } from 'react';
-<<<<<<< HEAD
 import { uid } from 'uid';
-=======
->>>>>>> main
 
 export default ({handleNewTodo} : {handleNewTodo: Function}) => {
     const [newTodo, setNewTodo] = useState<ITodo>({
